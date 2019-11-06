@@ -1,0 +1,244 @@
+/* Global styles */
+
+.anchorlink {
+  padding-top: 120px;
+}
+
+.site-title {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+.site-title a:before {
+  content: "";
+  background: url('wp-content/uploads/2016/01/logo_white.png') left top no-repeat;
+  background: url('wp-content/uploads/2016/01/logo_white.svg') left top no-repeat,
+    linear-gradient(transparent, transparent);
+  width: 29px;
+  height: 29px;
+  padding-right: 15px;
+  padding-top: 6px;
+  display: inline-block;
+}
+
+.title-area > .site-title > a:hover {
+	color: #f04848 !important;
+    fill: #f04848 !important;
+}
+
+.site-description { 
+    height: 10px;
+    text-indent: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    top: 20px;
+    left: 195px;
+    width: 400px;
+}
+
+.full-width-content .content {
+	padding: 0 100px 50px;
+}
+
+.social {
+  text-align: center;
+}
+
+footer .logos a {
+  margin-right: 5px;
+}
+
+footer .logos img {
+  height: 40px;
+}
+
+blockquote {
+  color: #707070;
+}
+
+.author-box {
+  display: none;
+}
+
+/* Home page */
+.genesis-nav-menu {
+  font-size: 24px;
+}
+
+.genesis-nav-menu a {
+  margin: 24px 0;
+  padding: 0 10px;
+  border-right: 1px dotted #ccc;
+}
+
+.genesis-nav-menu li:last-of-type  a{ 
+  border-right: none;
+}
+
+/* Home page */
+
+.statistic {
+  font-family: 'Montserrat', sans-serif;
+  width: 24%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  border-right: 1px dotted #ccc;
+  padding: 6px;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.statistic:last-child {
+  border-right: none;
+}
+
+.statistic .loading {
+    background: url('wp-content/uploads/2016/01/loading.svg');
+    background-image: url('wp-content/uploads/2016/01/loading.gif'), none;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.number {
+  font-size: 66px;
+  color: #f04848;
+  font-weight: bold;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Table page */
+
+
+#table {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-family: 'Montserrat', sans-serif;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+table.dataTable {
+    border-top: 1px solid #111;
+}
+
+.dataTables_filter {
+  margin-bottom: 24px;
+}
+
+#table td, #table th, .dataTables_filter input,  .dataTables_filter select, .dataTables_length select {
+  font-size: 16px;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+    height: 34px;
+}
+
+#table li {
+  list-style-type: none;
+}
+
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate {
+    font-size: 16px;
+}
+
+.dataTables_filter input {
+  height: 28px;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    background-color: #f04848 !important;
+    top: 16px !important;
+    text-indent: 3.5px !important;
+    line-height: 17px !important;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+span[data-toggle="tooltip"] {
+    opacity: 0.2;
+}
+
+/* Team page */
+
+#bios {
+  margin: 10px 0 30px 0;
+}
+
+#bios .bio {
+  border-bottom: 1px dotted #ccc;
+  padding-top: 20px;
+}
+
+#bios img {
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 767px) {
+    div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+        text-align: left !important;
+    }
+}
+
+/* Stop the nav-menu breaking */
+@media (max-width: 1150px) {
+  .genesis-nav-menu {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 960px) {
+  .anchorlink {
+    padding-top: 20px;
+  }
+  .site-description { 
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  .number { 
+    font-size: 64px;
+  }
+  .caption { 
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) { 
+.full-width-content .content {
+	padding: 0 10px 50px;
+}
+  .statistic {
+    width: 100%;
+  }
+  .statistic {
+    border-right: none;
+  }
+}
+
+
+.post-edit-link{display:none;}
+
+.es_textbox_button, .es_textbox_class {
+    width: 100% !important;
+}
