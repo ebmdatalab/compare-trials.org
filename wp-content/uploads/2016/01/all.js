@@ -69,7 +69,7 @@
             key: key,
             simpleSheet: true,
             parseNumbers: true,
-            proxy: 'http://compare-trials.org/data/',
+            proxy: 'https://compare-trials.org/data/',
             postProcess: function(d) {
 
                 for (var k in d) {
