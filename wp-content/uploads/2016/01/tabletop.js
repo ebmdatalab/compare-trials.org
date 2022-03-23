@@ -194,7 +194,7 @@
     /*
       Insert the URL into the page as a script tag. Once it's loaded the spreadsheet data
       it triggers the callback. This helps you avoid cross-domain errors
-      http://code.google.com/apis/gdata/samples/spreadsheet_sample.html
+      https://code.google.com/apis/gdata/samples/spreadsheet_sample.html
 
       Let's be plain-Jane and not use jQuery or anything.
     */
