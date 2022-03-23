@@ -3,10 +3,21 @@
  * https://dev.twitter.com/web/javascript/loading
  */
 window.twttr = (function (d, s, id) {
-  var t, js, fjs = d.getElementsByTagName(s)[0];
+  var t,
+    js,
+    fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src= "https://platform.twitter.com/widgets.js";
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
   fjs.parentNode.insertBefore(js, fjs);
-  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-}(document, "script", "twitter-wjs"));
+  return (
+    window.twttr ||
+    (t = {
+      _e: [],
+      ready: function (f) {
+        t._e.push(f);
+      },
+    })
+  );
+})(document, "script", "twitter-wjs");
