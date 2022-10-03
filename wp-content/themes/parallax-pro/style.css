@@ -352,6 +352,8 @@ textarea:focus,
 a {
   color: #f04848;
   text-decoration: none;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 a:hover {
