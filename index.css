@@ -17,8 +17,10 @@
 
 .site-title a:before {
   content: "";
-  background: url("wp-content/uploads/2016/01/logo_white.png") left top no-repeat;
-  background: url("wp-content/uploads/2016/01/logo_white.svg") left top no-repeat,
+  background: url("wp-content/uploads/2016/01/logo_white.png") left top
+    no-repeat;
+  background: url("wp-content/uploads/2016/01/logo_white.svg") left top
+      no-repeat,
     linear-gradient(transparent, transparent);
   width: 29px;
   height: 29px;
@@ -27,7 +29,7 @@
   display: inline-block;
 }
 
-.title-area>.site-title>a:hover {
+.title-area > .site-title > a:hover {
   color: var(--compare-red) !important;
   fill: var(--compare-red) !important;
 }
@@ -166,8 +168,8 @@ div.dataTables_wrapper div.dataTables_length select {
   height: 28px;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
-table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   background-color: var(--compare-red) !important;
   top: 16px !important;
   text-indent: 3.5px !important;
@@ -208,7 +210,6 @@ span[data-toggle="tooltip"] {
 /* Responsive styles */
 
 @media screen and (max-width: 767px) {
-
   div.dataTables_wrapper div.dataTables_length,
   div.dataTables_wrapper div.dataTables_filter,
   div.dataTables_wrapper div.dataTables_info,
