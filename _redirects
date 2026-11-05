@@ -3,6 +3,9 @@
 /fda.html /fda 301
 /fda/ /fda 301
 /fda/index.html /fda 301
+/2016 /blog/2016/ 301
+/2016/ /blog/2016/ 301
+/2016/index.html /blog/2016/ 301
 /blog/lessons/erase.html /blog/lessons/erase 301
 /blog/lessons/erase/ /blog/lessons/erase 301
 /blog/lessons/erase/index.html /blog/lessons/erase 301
