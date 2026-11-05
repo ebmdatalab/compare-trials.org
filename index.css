@@ -17,9 +17,9 @@
 
 .site-title a:before {
   content: "";
-  background: url("wp-content/uploads/2016/01/logo_white.png") left top
+  background: url("/wp-content/uploads/2016/01/logo_white.png") left top
     no-repeat;
-  background: url("wp-content/uploads/2016/01/logo_white.svg") left top
+  background: url("/wp-content/uploads/2016/01/logo_white.svg") left top
       no-repeat,
     linear-gradient(transparent, transparent);
   width: 29px;
@@ -103,8 +103,8 @@ blockquote {
 }
 
 .statistic .loading {
-  background: url("wp-content/uploads/2016/01/loading.svg");
-  background-image: url("wp-content/uploads/2016/01/loading.gif"), none;
+  background: url("/wp-content/uploads/2016/01/loading.svg");
+  background-image: url("/wp-content/uploads/2016/01/loading.gif"), none;
   width: 100px;
   height: 100px;
   display: inline-block;
