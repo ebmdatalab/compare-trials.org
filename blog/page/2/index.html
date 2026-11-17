@@ -34,7 +34,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
     />
     <meta name="robots" content="noodp,noydir" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="dns-prefetch" href="https://w.sharethis.com/" />
     <link
       rel="stylesheet"
       id="parallax-pro-theme-css"
@@ -46,13 +45,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
       rel="stylesheet"
       id="sm-style-css"
       href="/wp-content/plugins/wp-show-more/wpsm-style.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="kamn-css-easy-twitter-feed-widget-css"
-      href="/wp-content/plugins/easy-twitter-feed-widget/easy-twitter-feed-widget.css"
       type="text/css"
       media="all"
     />
@@ -101,11 +93,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
     <script
       type="text/javascript"
       src="/wp-content/themes/parallax-pro/js/responsive-menu.js"
-    ></script>
-    <script
-      id="st_insights_js"
-      type="text/javascript"
-      src="https://w.sharethis.com/button/st_insights.js?publisher=eba0f3ba-f9ab-408c-bc68-c28af5afe749&#038;product=feather"
     ></script>
     <style type="text/css"></style>
     <link rel="prev" href="/blog/index.html" />
@@ -990,39 +977,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
                         return this.replace(/^\s+|\s+$/g, "");
                       };
 
-                      function createCookie(name, value, days) {
-                        if (days) {
-                          var date = new Date();
-                          date.setTime(
-                            date.getTime() + days * 24 * 60 * 60 * 1000
-                          );
-                          var expires = "; expires=" + date.toGMTString();
-                        } else {
-                          var expires = "";
-                        }
-                        document.cookie =
-                          name + "=" + value + expires + "; path=/";
-                      }
-
-                      function readCookie(name) {
-                        var nameEQ = name + "=";
-                        var ca = document.cookie.split(";");
-                        for (var i = 0; i < ca.length; i++) {
-                          var c = ca[i];
-                          while (c.charAt(0) == " ") {
-                            c = c.substring(1, c.length);
-                          }
-                          if (c.indexOf(nameEQ) == 0) {
-                            return c.substring(nameEQ.length, c.length);
-                          }
-                        }
-                        return null;
-                      }
-
-                      function eraseCookie(name) {
-                        createCookie(name, "", -1);
-                      }
-
                       function addExpandCollapse(
                         id,
                         expandSym,
@@ -1046,7 +1000,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
                                 .find("span.collapse")
                                 .removeClass("collapse")
                                 .addClass("expand");
-                              createCookie(theDiv.attr("id"), 0, 7);
                               jQuery(this)
                                 .parent()
                                 .parent()
@@ -1084,7 +1037,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
                           .removeClass("expand")
                           .addClass("collapse");
                         jQuery(symbol).children(".sym").html(collapseSym);
-                        createCookie(theDiv.attr("id"), 1, 7);
                       }
                       function collapseArch(symbol, expandSym, collapseSym) {
                         var theDiv = jQuery(symbol).parent().children("div");
@@ -1093,7 +1045,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
                           .removeClass("collapse")
                           .addClass("expand");
                         jQuery(symbol).children(".sym").html(expandSym);
-                        createCookie(theDiv.attr("id"), 0, 7);
                       }
                       addExpandCollapse(
                         "widget-collapsarch-2-top",
@@ -1106,46 +1057,14 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
                 </ul>
               </div>
             </section>
-            <section
-              id="widget-easy-twitter-feed-widget-kamn-2"
-              class="widget widget-easy-twitter-feed-widget-kamn"
-            >
+            <section class="widget">
               <div class="widget-wrap">
-                <div class="widget-easy-twitter-feed-widget-global-wrapper">
-                  <div class="widget-easy-twitter-feed-widget-container">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <h4 class="widget-title widgettitle">
-                          <span>Latest tweets</span>
-                        </h4>
-                      </div>
-                    </div>
-
-                    <div class="widget-easy-twitter-feed-widget-row">
-                      <div class="widget-easy-twitter-feed-widget-col">
-                        <div
-                          class="twitterwidget widget-easy-twitter-feed-widget-kamn-2"
-                        >
-                          <a
-                            class="twitter-timeline"
-                            width="300"
-                            height="450"
-                            href="https://twitter.com/twitterdev"
-                            data-widget-id="344713329262084096"
-                            data-screen-name="compare_trials"
-                            data-show-replies="false"
-                            data-theme="light"
-                            data-link-color="#f04848"
-                            data-border-color=""
-                            data-chrome=""
-                            >Tweets by @compare_trials</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End .widget-global-wrapper -->
-                </div>
+                <h4 class="widget-title">Follow COMPare</h4>
+                <p>
+                  <a href="https://twitter.com/compare_trials"
+                    >@compare_trials on Twitter</a
+                  >
+                </p>
               </div>
             </section>
           </aside>
@@ -1223,10 +1142,6 @@ Henry Drysdale, Ben Goldacre, and Carl Heneghan on behalf of the COMPare team.'
     <script
       type="text/javascript"
       src="/wp-content/plugins/wp-show-more/wpsm-script.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="/wp-content/plugins/easy-twitter-feed-widget/lib/js/widget-easy-twitter-feed-widget.js"
     ></script>
   </body>
 </html>
